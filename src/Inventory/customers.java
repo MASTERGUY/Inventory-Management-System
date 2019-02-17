@@ -565,6 +565,7 @@ private void clear(){
         dataclass.csid=(jtablecs.getValueAt(jtablecs.getSelectedRow(), 0).toString());
         dataclass.csname=(jtablecs.getValueAt(jtablecs.getSelectedRow(), 1).toString());
         this.setVisible(false);
+        jlabletxt.setText("");
        
         
         }
@@ -624,14 +625,14 @@ private void clear(){
             jcussave.setVisible(true);
             jcusupdate.setVisible(true);
             jdelete.setVisible(true);
-            jcr.setVisible(false);
-             jci.setVisible(false);
-            jcn.setVisible(false);
-            jca.setVisible(false);
-            jcp.setVisible(false);
-            jce.setVisible(false);
-            jci.setVisible(false);
-            jcip.setVisible(false);
+            jcr.setVisible(true);
+             jci.setVisible(true);
+            jcn.setVisible(true);
+            jca.setVisible(true);
+            jcp.setVisible(true);
+            jce.setVisible(true);
+            jci.setVisible(true);
+            jcip.setVisible(true);
             jcustomerentry.setText("                                                                                          Customer Entry");
         clear();
 

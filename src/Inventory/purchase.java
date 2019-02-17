@@ -300,10 +300,13 @@ if (result > 0) {
 
         jdiscount.setFocusCycleRoot(true);
         jdiscount.setNextFocusableComponent(jtotal);
+       
+    
         jdiscount.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jdiscountKeyTyped(evt);
             }
+          
         });
 
         jtable.setFont(new java.awt.Font("Ubuntu", 0, 14)); // NOI18N
@@ -335,8 +338,8 @@ if (result > 0) {
             }
         });
 
-        jqtnty.setNextFocusableComponent(jprice);
-
+       
+   
         jqtnty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jqtntyKeyTyped(evt);
@@ -353,7 +356,7 @@ if (result > 0) {
         jdiscrs.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jdiscrs.setForeground(new java.awt.Color(0, 255, 76));
 
- 
+      
 
         jcn.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jcn.setForeground(new java.awt.Color(1, 1, 1));
@@ -366,6 +369,7 @@ if (result > 0) {
                 jtotalFocusGained(evt);
             }
         });
+      
 
         jpp.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jpp.setForeground(new java.awt.Color(1, 1, 1));
@@ -375,6 +379,7 @@ if (result > 0) {
         jpd.setForeground(new java.awt.Color(1, 1, 1));
         jpd.setText("Product Discount");
 
+        jrs.setFont(new java.awt.Font("DejaVu Sans", 1, 12)); // NOI18N
         jrs.setForeground(new java.awt.Color(1, 1, 1));
         jrs.setText("RS");
 
@@ -409,6 +414,7 @@ if (result > 0) {
         jpurchaselable.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jpurchaselable.setForeground(new java.awt.Color(255, 255, 0));
         jpurchaselable.setText("                                                                                        Purchase Product");
+
 
 
         jsave.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N

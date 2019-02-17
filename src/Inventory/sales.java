@@ -156,12 +156,13 @@ public class sales extends javax.swing.JFrame {
     private void total() 
     {
         try{
-        float a,b,c,d,f,g; 
+        float a,b,c,d,e,f,g; 
         a=Float.parseFloat(jqtnty.getText().trim()); 
             b=Float.parseFloat(jcostprice.getText().trim());
             f=Float.parseFloat(jsellingprice.getText().trim());
             c=a*b;
-            g=c*f;
+            e=((f*c)/100);
+            g=c+e;
             d=g-Float.parseFloat(jdiscount.getText().trim());
            jprdcttotal.setText(Float.toString(d).trim());    
         }
@@ -172,12 +173,14 @@ public class sales extends javax.swing.JFrame {
 private void sells()
 {
     try{
-        float a,b,c,d,f,g; 
+        float a,b,c,d,e,f,g; 
         a=Float.parseFloat(jqtnty.getText().trim()); 
             b=Float.parseFloat(jcostprice.getText().trim());
             f=Float.parseFloat(jsellingprice.getText().trim());
             c=a*b;
-            g=c*f;
+            
+            e=((f*c)/100);
+            g=c+e;
             jselldiscount.setText(String.valueOf(g).trim());
 }
              catch(NumberFormatException | NullPointerException e){ 
