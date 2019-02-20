@@ -445,11 +445,15 @@ private void sells()
         jLabel19.setForeground(new java.awt.Color(1, 1, 1));
         jLabel19.setText("Product Category");
 
-   
+        jprdctcateg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jprdctcategActionPerformed(evt);
+            }
+        });
 
         jLabel20.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(1, 1, 1));
-        jLabel20.setText("Selling Price");
+        jLabel20.setText("Profit");
 
         jsellingprice.setFocusCycleRoot(true);
         jsellingprice.setNextFocusableComponent(jdiscount);
@@ -457,7 +461,9 @@ private void sells()
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jsellingpriceKeyReleased(evt);
             }
-
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jsellingpriceKeyTyped(evt);
+            }
         });
 
         jLabel21.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
@@ -465,9 +471,21 @@ private void sells()
         jLabel21.setText("Discount");
 
         jdiscount.setFocusCycleRoot(true);
-  
+        jdiscount.setNextFocusableComponent(jprdcttotal);
+        jdiscount.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jdiscountFocusGained(evt);
+            }
+        });
+        jdiscount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jdiscountActionPerformed(evt);
+            }
+        });
         jdiscount.addKeyListener(new java.awt.event.KeyAdapter() {
-            
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jdiscountKeyPressed(evt);
+            }
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jdiscountKeyReleased(evt);
             }
@@ -497,8 +515,17 @@ private void sells()
         jqntyftch.setForeground(new java.awt.Color(0, 255, 76));
 
         jqtnty.setFocusCycleRoot(true);
- 
- 
+        jqtnty.setNextFocusableComponent(jsellingprice);
+        jqtnty.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jqtntyFocusGained(evt);
+            }
+        });
+        jqtnty.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jqtntyActionPerformed(evt);
+            }
+        });
         jqtnty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jqtntyKeyReleased(evt);
@@ -513,7 +540,7 @@ private void sells()
 
         jLabel22.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(1, 1, 1));
-        jLabel22.setText("Product Total");
+        jLabel22.setText("Selling Price");
 
         jprdcttotal.setFocusCycleRoot(true);
         jprdcttotal.setNextFocusableComponent(jaddcart);
@@ -522,7 +549,17 @@ private void sells()
                 jprdcttotalFocusGained(evt);
             }
         });
-       
+        jprdcttotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jprdcttotalActionPerformed(evt);
+            }
+        });
+        jprdcttotal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jprdcttotalKeyPressed(evt);
+            }
+        });
+
         btnredirect1.setForeground(new java.awt.Color(1, 1, 1));
         btnredirect1.setText("...");
         btnredirect1.setFocusCycleRoot(true);
@@ -736,7 +773,11 @@ private void sells()
                 jtransmodeItemStateChanged(evt);
             }
         });
-   
+        jtransmode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtransmodeActionPerformed(evt);
+            }
+        });
 
         jLabel30.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(1, 1, 1));
@@ -758,7 +799,9 @@ private void sells()
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jtpymntKeyTyped(evt);
             }
-     
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtpymntKeyPressed(evt);
+            }
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jtpymntKeyReleased(evt);
             }
@@ -885,7 +928,11 @@ private void sells()
         jLabel14.setForeground(new java.awt.Color(1, 1, 1));
         jLabel14.setText("Invoice Creation Date");
 
-        
+        jinvdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jinvdateActionPerformed(evt);
+            }
+        });
 
         btnredirect.setForeground(new java.awt.Color(1, 1, 1));
         btnredirect.setText("...");
