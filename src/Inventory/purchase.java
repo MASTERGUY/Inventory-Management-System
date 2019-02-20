@@ -640,7 +640,8 @@ if (result > 0) {
         char vChar = evt.getKeyChar();
         if (!(Character.isDigit(vChar)
             || (vChar == KeyEvent.VK_BACK_SPACE)
-            || (vChar == KeyEvent.VK_DELETE))) {
+            || (vChar == KeyEvent.VK_DELETE)
+                )) {
         evt.consume();
         }
     }//GEN-LAST:event_jpriceKeyTyped
