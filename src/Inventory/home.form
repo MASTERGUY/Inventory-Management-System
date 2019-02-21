@@ -11,6 +11,7 @@
           <Color blue="ff" green="0" red="b9" type="rgb"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Ubuntu" size="24" style="1"/>
         </Property>
@@ -22,10 +23,12 @@
               <Image iconType="3" name="/Inventory/icons/icons8-customer-50.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Customers   "/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Ubuntu" size="24" style="1"/>
             </Property>
+            <Property name="name" type="java.lang.String" value="Customers" noResource="true"/>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jpurchase"/>
             </Property>

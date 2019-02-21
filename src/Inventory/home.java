@@ -197,12 +197,15 @@ private void table()
         jMenuBar1.setBackground(new java.awt.Color(185, 0, 255));
         jMenuBar1.setForeground(new java.awt.Color(185, 0, 255));
         jMenuBar1.setToolTipText("");
+        jMenuBar1.setBorderPainted(false);
         jMenuBar1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
 
         jcustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Inventory/icons/icons8-customer-50.png"))); // NOI18N
         jcustomer.setText("Customers   ");
+        jcustomer.setContentAreaFilled(false);
         jcustomer.setFocusable(false);
         jcustomer.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        jcustomer.setName("Customers"); // NOI18N
         jcustomer.setNextFocusableComponent(jpurchase);
 
         jaddcustomer.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N

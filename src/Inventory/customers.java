@@ -267,13 +267,21 @@ private void clear(){
 
         jidprf.setForeground(new java.awt.Color(1, 1, 1));
         jidprf.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adhar Card", "Driving License", "Pan Card", "Passport No" }));
-
+        jidprf.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jidprfItemStateChanged(evt);
+            }
+        });
         jidprf.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jidprfFocusGained(evt);
             }
         });
- 
+        jidprf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jidprfActionPerformed(evt);
+            }
+        });
 
         jci.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jci.setForeground(new java.awt.Color(1, 1, 1));
@@ -340,6 +348,12 @@ private void clear(){
             }
         });
 
+        jidprfans.setForeground(new java.awt.Color(1, 1, 1));
+        jidprfans.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jidprfansKeyTyped(evt);
+            }
+        });
 
         jcusadd.setForeground(new java.awt.Color(1, 1, 1));
 
@@ -649,7 +663,20 @@ private void clear(){
        
     }
 
+private void jidprfItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jidprfItemStateChanged
+        
+    }//GEN-LAST:event_jidprfItemStateChanged
 
+
+private void jidprfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jidprfActionPerformed
+   
+       
+    }//GEN-LAST:event_jidprfActionPerformed
+    
+private void jidprfansKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jidprfansKeyTyped
+   
+       
+    }//GEN-LAST:event_jidprfansKeyTyped
     /**
      * @param args the command line arguments
      */

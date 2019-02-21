@@ -191,7 +191,7 @@
                                       <Component id="jaddcart" min="-2" pref="109" max="-2" attributes="0"/>
                                       <EmptySpace pref="122" max="32767" attributes="0"/>
                                       <Component id="jqntyftch" min="-2" pref="33" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="12" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
@@ -207,18 +207,20 @@
                                                   <Component id="jsellingprice" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jLabel35" min="-2" pref="22" max="-2" attributes="0"/>
-                                                      <EmptySpace max="32767" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace pref="11" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="jLabel34" min="-2" pref="22" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jselldiscount" min="-2" pref="81" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jLabel24" min="-2" pref="22" max="-2" attributes="0"/>
-                                                      <EmptySpace max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                                      <Component id="jdiscrs" min="-2" pref="81" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jLabel25" min="-2" pref="22" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -226,9 +228,9 @@
                                               <Component id="jLabel22" min="-2" pref="129" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jprdcttotal" min="-2" pref="144" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -263,16 +265,21 @@
                                               </Group>
                                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                           </Group>
-                                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                              <Component id="jsellingprice" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                              <Component id="jLabel20" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                                              <Component id="jLabel34" alignment="3" max="32767" attributes="0"/>
+                                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                                                  <Component id="jLabel34" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                                  <Component id="jsellingprice" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                                  <Component id="jLabel20" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="jselldiscount" pref="53" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                      <Component id="jselldiscount" min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -282,25 +289,6 @@
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel21" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="jdiscount" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="jLabel35" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-                                      <Component id="jlblqty" min="-2" pref="40" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                                      <Component id="jcp" min="-2" pref="40" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -336,6 +324,33 @@
                                   </Group>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel36" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel21" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="jdiscount" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jdiscrs" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="jLabel25" alignment="1" pref="42" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                                      <Component id="jlblqty" min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                      <Component id="jcp" min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -618,17 +633,6 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel35">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu" size="14" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="1" green="1" red="1" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="RS"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jcp">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -641,6 +645,38 @@
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel36">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Ubuntu" size="18" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="1" green="1" red="1" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="%"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jdiscrs">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Ubuntu" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="4c" green="ff" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel25">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Ubuntu" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="1" green="1" red="1" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="RS"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

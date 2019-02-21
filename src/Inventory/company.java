@@ -286,6 +286,11 @@ private void clear(){
 
         jproduct_name.setForeground(new java.awt.Color(1, 1, 1));
         jproduct_name.setNextFocusableComponent(jproductcateg);
+        jproduct_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jproduct_nameActionPerformed(evt);
+            }
+        });
 
         jca.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jca.setForeground(new java.awt.Color(1, 1, 1));
@@ -293,7 +298,11 @@ private void clear(){
 
         jcompdate.setForeground(new java.awt.Color(1, 1, 1));
         jcompdate.setNextFocusableComponent(jsavecomp);
- 
+        jcompdate.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jcompdateKeyTyped(evt);
+            }
+        });
 
         jcr.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jcr.setForeground(new java.awt.Color(1, 1, 1));
@@ -327,9 +336,19 @@ private void clear(){
 
         jcompname.setForeground(new java.awt.Color(1, 1, 1));
         jcompname.setNextFocusableComponent(jproduct_name);
+        jcompname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcompnameActionPerformed(evt);
+            }
+        });
 
         jlabeltxt.setFocusTraversalPolicyProvider(true);
-       
+        jlabeltxt.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                jlabeltxtComponentHidden(evt);
+            }
+        });
+
         jtable.setForeground(new java.awt.Color(1, 1, 1));
         jtable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -620,6 +639,23 @@ private void clear(){
 
         this.setVisible(false);
     }//GEN-LAST:event_jbackActionPerformed
+    
+     private void jproduct_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jproduct_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jproduct_nameActionPerformed
+    
+    private void jcompdateKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jcompdateKeyTyped
+        
+    }//GEN-LAST:event_jcompdateKeyTyped
+    
+    private void jcompnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcompnameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcompnameActionPerformed
+    
+      private void jlabeltxtComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jlabeltxtComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jlabeltxtComponentHidden
+
 
     /**
      * @param args the command line arguments

@@ -65,7 +65,7 @@ public class forgetpassword extends javax.swing.JFrame {
     }    
        private void date()
  { 
-    jdob.setDateFormatString("yyyy/MM/dd");
+    jdob.setDateFormatString("dd/MM/yyyy");
  }
     private void conn()
    {
@@ -98,8 +98,8 @@ public class forgetpassword extends javax.swing.JFrame {
             {
                 try {
                  
-                     jdob.setDateFormatString("yyyy/MM/dd");
-        DateFormat sysDate = new SimpleDateFormat("yyyy/MM/dd");
+                     jdob.setDateFormatString("dd/MM/yyyy");
+        DateFormat sysDate = new SimpleDateFormat("dd/MM/yyyy");
         String date_to_store = sysDate.format(jdob.getDate());
         PreparedStatement pst;
         pst = con.prepareStatement("select *from login where sec_ans='"+jsecans.getText().trim()+"' and dob='"+date_to_store+"'");

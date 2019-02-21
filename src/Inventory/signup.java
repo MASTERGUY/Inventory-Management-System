@@ -23,14 +23,10 @@ public class signup extends javax.swing.JFrame {
     Connection con =connection.getConnection();
     public signup() {
         initComponents();
-        date();
+    jdob.setDateFormatString("dd/MM/yyyy");
     }
    
  
-       private void date()
- { 
-    jdob.setDateFormatString("yyyy/MM/dd");
- }
        private void clear()
        {
            jtxtuser.setText("");
@@ -71,8 +67,8 @@ public class signup extends javax.swing.JFrame {
              }
                 else
                      {
-                     jdob.setDateFormatString("yyyy/MM/dd");
-        DateFormat sysDate = new SimpleDateFormat("yyyy/MM/dd");
+                     jdob.setDateFormatString("dd/MM/yyyy");
+        DateFormat sysDate = new SimpleDateFormat("dd/MM/yyyy");
         String date_to_store = sysDate.format(jdob.getDate());
                  Connection con =connection.getConnection();
                    String sql="INSERT into login VALUES(ID,'"+jtxtuser.getText().trim()+"','"+jsecquestion.getSelectedItem()+"','"+jsecans.getText().trim()+"','"+date_to_store+"','"+jadmin.getSelectedItem()+"','"+jtxtpass.getText().trim()+"')";
@@ -137,6 +133,9 @@ public class signup extends javax.swing.JFrame {
         jhome.setForeground(new java.awt.Color(1, 1, 1));
         jhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Inventory/icons/icons8-password-20.png"))); // NOI18N
         jhome.setText("Back  to Home");
+        jhome.setBorder(null);
+        jhome.setBorderPainted(false);
+        jhome.setContentAreaFilled(false);
         jhome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jhomeActionPerformed(evt);
@@ -153,11 +152,14 @@ public class signup extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Inventory/icons/icons8-today-20.png"))); // NOI18N
         jLabel7.setText("Date of Birth");
 
-        jsgnup.setBackground(new java.awt.Color(245, 245, 245));
+        jsgnup.setBackground(new java.awt.Color(255, 255, 255));
         jsgnup.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jsgnup.setForeground(new java.awt.Color(1, 1, 1));
         jsgnup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Inventory/icons/icons8-add-user-male-20.png"))); // NOI18N
         jsgnup.setText("Signup Now");
+        jsgnup.setBorder(null);
+        jsgnup.setBorderPainted(false);
+        jsgnup.setContentAreaFilled(false);
         jsgnup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jsgnupActionPerformed(evt);
@@ -266,7 +268,7 @@ public class signup extends javax.swing.JFrame {
                                     .addComponent(jsecans, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(30, 30, 30))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
                         .addContainerGap())))
         );
 
@@ -311,9 +313,9 @@ public class signup extends javax.swing.JFrame {
                 .addComponent(jCheckBox1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jsgnup)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jhome)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jtxtpass, jtxtpassconfrm, jtxtuser});

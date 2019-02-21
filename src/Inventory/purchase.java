@@ -300,13 +300,23 @@ if (result > 0) {
 
         jdiscount.setFocusCycleRoot(true);
         jdiscount.setNextFocusableComponent(jtotal);
-       
-    
+        jdiscount.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jdiscountFocusGained(evt);
+            }
+        });
+        jdiscount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jdiscountActionPerformed(evt);
+            }
+        });
         jdiscount.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jdiscountKeyTyped(evt);
             }
-          
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jdiscountKeyPressed(evt);
+            }
         });
 
         jtable.setFont(new java.awt.Font("Ubuntu", 0, 14)); // NOI18N
@@ -338,8 +348,17 @@ if (result > 0) {
             }
         });
 
-       
-   
+        jqtnty.setNextFocusableComponent(jprice);
+        jqtnty.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jqtntyFocusGained(evt);
+            }
+        });
+        jqtnty.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jqtntyActionPerformed(evt);
+            }
+        });
         jqtnty.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jqtntyKeyTyped(evt);
@@ -356,7 +375,11 @@ if (result > 0) {
         jdiscrs.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jdiscrs.setForeground(new java.awt.Color(0, 255, 76));
 
-      
+        jdate.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jdateFocusGained(evt);
+            }
+        });
 
         jcn.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jcn.setForeground(new java.awt.Color(1, 1, 1));
@@ -369,7 +392,16 @@ if (result > 0) {
                 jtotalFocusGained(evt);
             }
         });
-      
+        jtotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtotalActionPerformed(evt);
+            }
+        });
+        jtotal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtotalKeyPressed(evt);
+            }
+        });
 
         jpp.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jpp.setForeground(new java.awt.Color(1, 1, 1));
@@ -415,7 +447,22 @@ if (result > 0) {
         jpurchaselable.setForeground(new java.awt.Color(255, 255, 0));
         jpurchaselable.setText("                                                                                        Purchase Product");
 
+        jcateg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcategActionPerformed(evt);
+            }
+        });
 
+        jcompname.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jcompnameFocusGained(evt);
+            }
+        });
+        jcompname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcompnameActionPerformed(evt);
+            }
+        });
 
         jsave.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
         jsave.setForeground(new java.awt.Color(1, 1, 1));
@@ -494,7 +541,7 @@ if (result > 0) {
                                 .addComponent(jtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jsave, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(88, 88, 88)
+                                .addGap(86, 86, 86)
                                 .addComponent(jupdate, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jcn, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -525,7 +572,7 @@ if (result > 0) {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addComponent(jpurchaselable)
                 .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -729,7 +776,7 @@ else if (jlabel1txt.getText().equals(""))
        
     }//GEN-LAST:event_jbackActionPerformed
 
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {                                  
         if(jlabel1txt.getText().equals("purchase"))
 {
     
@@ -798,8 +845,51 @@ jid.setVisible(true);
     jback.setVisible(true);
     jpurchaselable.setText("                                                                                        Purchase Product");
 }
-              
-    }//GEN-LAST:event_formWindowOpened
+    }
+private void jdiscountFocusGained(java.awt.event.FocusEvent evt) {                                      
+      
+    }
+        
+private void jdiscountActionPerformed(java.awt.event.ActionEvent evt) {                                          
+      
+    }         
+     
+private void jdiscountKeyPressed(java.awt.event.KeyEvent evt) {                                     
+      
+}
+        
+private void jqtntyFocusGained(java.awt.event.FocusEvent evt) {                                   
+      
+    } 
+        
+private void jqtntyActionPerformed(java.awt.event.ActionEvent evt) {                                       
+      
+    } 
+        
+private void jdateFocusGained(java.awt.event.FocusEvent evt) {                                   
+      
+    }
+        
+private void jtotalActionPerformed(java.awt.event.ActionEvent evt) {                                       
+      
+    }
+
+private void jtotalKeyPressed(java.awt.event.KeyEvent evt) {                                     
+      
+}
+
+private void jcompnameFocusGained(java.awt.event.FocusEvent evt) {                                   
+      
+    }
+        
+private void jcompnameActionPerformed(java.awt.event.ActionEvent evt) {                                       
+      
+    }
+        
+private void jcategActionPerformed(java.awt.event.ActionEvent evt) {                                       
+      
+    }        
+        
 
     /**
      * @param args the command line arguments
