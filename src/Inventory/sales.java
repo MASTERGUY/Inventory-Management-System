@@ -148,7 +148,7 @@ public class sales extends javax.swing.JFrame {
         float total=0;
         for(int i=0; i< rc; i++)
         {
-            total=total+Float.parseFloat(jtable.getValueAt(i, 5).toString());
+            total=total+Float.parseFloat(jtable.getValueAt(i, 6).toString());
         }
         return total;
     }

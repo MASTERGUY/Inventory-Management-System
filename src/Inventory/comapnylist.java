@@ -522,9 +522,9 @@ public class comapnylist extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jtableMouseClicked(java.awt.event.MouseEvent evt) {                                    
+    private void jtableMouseClicked(java.awt.event.MouseEvent evt) {                                                                        
         
-    }
+    }                                    
 
     private void jsidKeyReleased(java.awt.event.KeyEvent evt) {                                 
         sid();        
