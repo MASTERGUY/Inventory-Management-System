@@ -40,7 +40,7 @@ Make a pull request if you want to contribute to this project
 
 ## Authors
 
-* **Murtaza Piplod** - *Initial work* - [MASTERGUY](https://github.com/MASTERGUY/)
+* **Murtaza Piplod** [MASTERGUY](https://github.com/MASTERGUY/)
 
 
 ## License
