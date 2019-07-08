@@ -1,7 +1,7 @@
 # Inventory Management System
 
 Inventory Management System is made by me (Murtaza Piplod) in Java(Swing) With My SQL Database.
-It allows user/local shopkepper to maintain there Inventory in one single place.
+It allows user/local shopkeeper to maintain there Inventory in one single place.
 
 
 ### Prerequisites
